@@ -21,6 +21,24 @@
   width:100%;
   height:660px;
   }
+   .col1
+  {
+width:33.3%;
+  }
+
+ .middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.col1:hover .middle {
+  opacity: 1;
+} 
   </style>
   </head>
   <body>
@@ -78,5 +96,20 @@
      <button class="btn btn-outline-dark text-light badge-pill"> Go Premium</button>
      <button class="btn btn-outline-light text-secondary badge-pill"> Free Trail</button>
      </div>
+      <!---------------brands------------>
+      <div class="container">
+  <h2 class="text-center" style="color:#f4511e;"> choose your brands</h2>
+  <p class="text-center">Get customized search</p>
+  <div class="row">
+    <div class="col bg-secondary col1" ><img src="https://images.pexels.com/photos/267391/pexels-photo-267391.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"width="100%" height="100%">
+    <div class="middle"><button class="btn btn-sm btn-outline-light text-danger">Apple</button></div>
+   </div>
+    
+    
+    <div class="col bg-dark col1"><img src="https://i2.wp.com/www.ltmobilenews.com/wp-content/uploads/2019/10/amazfit-gts-3.jpg?fit=1051%2C448&ssl=1"width="100%" height="100%"><div class="middle"><button class="btn btn-sm btn-outline-light text-danger">Xiaomi</button></div> </div>
+    
+    <div class="col bg-secondary col1" ><img src="https://i.insider.com/5c015c7e98a66e16fb7269a2?width=1136&format=jpeg"width="100%" height="100%"><div class="middle"><button class="btn btn-sm btn-outline-light text-danger">Fossil</button></div></div>
+  </div>
+</div>
   </body>
   </html>
