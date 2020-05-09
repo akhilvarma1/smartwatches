@@ -21,12 +21,20 @@
   width:100%;
   height:660px;
   }
-   .col1
-  {
-width:33.3%;
-  }
+   .container {
+  position: relative;
+  width: 100%;
+}
 
- .middle {
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.middle {
   transition: .5s ease;
   opacity: 0;
   position: absolute;
@@ -36,9 +44,10 @@ width:33.3%;
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
-.col1:hover .middle {
+.container:hover .middle {
   opacity: 1;
-} 
+}
+
   </style>
   </head>
   <body>
@@ -97,24 +106,75 @@ width:33.3%;
      <button class="btn btn-outline-light text-secondary badge-pill"> Free Trail</button>
      </div>
       <!---------------brands------------>
-      <section  style="margin:100px;">
-      <div class="container-fluid">
-  <h2 class="text-center" style="color:#f4511e;"> choose your brands</h2>
-  <p class="text-center">Get customized search</p>
-  <div class="row">
-    <div class="col bg-secondary col1" >
-      <img src="https://images.pexels.com/photos/267391/pexels-photo-267391.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"width="100%" height="100%">
-    <div class="middle"><button class="btn btn-sm btn-outline-light text-danger">Apple</button></div>
-   </div>
-    <div class="col bg-dark col1">
-      <img src="https://i2.wp.com/www.ltmobilenews.com/wp-content/uploads/2019/10/amazfit-gts-3.jpg?fit=1051%2C448&ssl=1"width="100%" height="100%">
-      <div class="middle"><button class="btn btn-sm btn-outline-light text-danger">Xiaomi</button></div> </div>
-    
-    <div class="col bg-secondary col1" >
-      <img src="https://i.insider.com/5c015c7e98a66e16fb7269a2?width=1136&format=jpeg"width="100%" height="100%"><div class="middle">
-      <button class="btn btn-sm btn-outline-light text-danger">Fossil</button></div></div>
+      <section >
+<h1 class="text-center" style="color:#f4511e;">SmartWatches</h1>
+<p class="text-center">select your favorite model of Smart watches.</p> 
+<div class="row ">
+    <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto">
+    <div class=" d-block m-auto">
+    <div class="container">
+  <img src="https://images.pexels.com/photos/267391/pexels-photo-267391.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Newgads" class="image" style="width:100%">
+  <div class="middle">
+   <button class="btn btn-outline-light btn-sm text-danger">Apple</button>
   </div>
 </div>
-      </section>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto">
+    <div class=" d-block m-auto">
+    <div class="container">
+  <img src="https://i.gadgets360cdn.com/large/xiaomi_mi_watch_front_1572960291481.jpg" alt="NewGads" class="image" style="width:100%">
+  <div class="middle">
+   <button class="btn btn-outline-light btn-sm text-danger">Xiaomi</button>
+  </div>
+</div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto">
+    <div class=" d-block m-auto">
+    <div class="container">
+  <img src="https://i.insider.com/5c015c7e98a66e16fb7269a2?width=1136&format=jpeg" alt="Avatar" class="image" style="width:100%">
+  <div class="middle">
+   <button class="btn btn-outline-light btn-sm text-danger">Fossil</button>
+  </div>
+</div>
+    </div>
+  </div>
+  </div>
+  </section>
+  <section>
+  <div class="row " style="padding-top:40px;">
+    <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto">
+    <div class=" d-block m-auto">
+    <div class="container">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR9w7ELNi3V-OMYEwF1yVwHy8w4dLizq4yn8B4MmPCynmrmKo8Q&usqp=CAU" alt="Newgads" class="image" style="width:100%">
+  <div class="middle">
+   <button class="btn btn-outline-light btn-sm text-danger">Asus</button>
+  </div>
+</div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto">
+    <div class=" d-block m-auto">
+    <div class="container">
+  <img src="https://i2.wp.com/esist.tech/wp-content/uploads/2017/04/1139.jpg?fit=1600%2C900&ssl=1" alt="NewGads" class="image" style="width:100%">
+  <div class="middle">
+   <button class="btn btn-outline-light btn-sm text-danger">Sony</button>
+  </div>
+</div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto">
+    <div class=" d-block m-auto">
+    <div class="container">
+  <img src="https://i.ytimg.com/vi/uVR1MaqNTn4/maxresdefault.jpg" alt="Avatar" class="image" style="width:100%">
+  <div class="middle">
+   <button class="btn btn-outline-light btn-sm text-danger">Blink</button>
+  </div>
+</div>
+    </div>
+  </div>
+  </div>
+</section>
   </body>
   </html>
